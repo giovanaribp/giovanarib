@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovana Ribeiro Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://pixels.crd.co/assets/images/gallery143/3f0ad781.gif?v=29416114">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightbox.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <div class="loader"></div>
+   </div>
+
+    <div class="portfolio">
+        <div class="navbar">
+          <a href="./index.html"><button class="home">Home</button></a>
+          <button id="btnOpenAbout">About</button>
+          <button id="btnOpenContact">Contact</button>
+
+          <hr class="linha-horizontal"/>
+
+          <a href="https://www.linkedin.com/in/giovanarib/" target="_blank" rel="noopener noreferrer"><i class="fi fi-brands-linkedin" alt="LinkedIn icon"></i></a>
+          <a href="https://github.com/giovanaribp" target="_blank" rel="noopener noreferrer"><i class="fi fi-brands-github" alt="GitHub icon"></i></a>
+          <a href="mailto:giovana.ribp@hotmail.com"><i class="fi fi-rr-envelope" alt="Email icon"></i></a>
+        </div>
+
+        <div class="banner">
+            <h1 class="titulo">Port<br />⠀folio</h1>
+            <h4>Giovana Ribeiro <br /> Graphic Designer & Web Developer</h4>
+        </div>
+
+          <div class="menu-inferior">
+             <button onclick="openSection('graphic-design')" class="botao-inferior">Graphic Design</button>
+             <a href="https://github.com/giovanaribp" target="_blank" rel="noopener noreferrer"><button class="botao-inferior">Web Dev</button></a>
+             <!-- <button onclick="openSection('webdev')" class="botao-inferior">Web Dev</button> -->
+             <button onclick="openSection('illustration')" class="botao-inferior" style="display: none;">Illustration</button>
+          </div>
+
+      <dialog id="aboutPage">
+         <div class="white-box">
+             <h2>About</h2>
+           <div class="about-popup">
+
+             <div class="left">
+                <img class="selfportrait" src="./Materiais/imagem exemplo.jpg" alt="Selfportrait">
+             </div>
+
+             <div class="right">
+                <h3>Hello!</h3>
+                  <span><br />My name is Giovana, I'm 25 years old, and I currently work as a <mark>Graphic Designer</mark> and <mark>Web Developer</mark> in Brazil. In 2025, I graduated in Animation Design, and in the same year I began learning to program as a self-taught developer, with the intention of working as a Front-End developer in the future. I believe these studies complement my work as a Graphic and Motion Designer, as these fields naturally intersect. This website was 100% made by me as one of my first personal projects.<br />
+                    <br /><i class="fi fi-rr-marker" id="local"></i>⠀Brazil, São Paulo</span>
+                <hr class="horizontal-line"/>
+                <h6>Skills</h6><br />
+                <i class="fi fi-brands-photoshop" id="about-icons" alt="Adobe Photoshop icon"></i> <i class="fi fi-brands-illustrator" id="about-icons" alt="Illustrator icon"></i> <i class="fi fi-brands-after-effects" id="about-icons" alt="After Effects icon"></i> <i class="fi fi-brands-premiere" id="about-icons" alt="Adobe Premiere icon"></i> <i class="fi fi-brands-figma" id="about-icons" alt="Figma icon"></i> <i class="fi fi-brands-visual-basic" id="about-icons" alt="VSCode icon"></i> <i class="fi fi-brands-html5" id="about-icons" alt="HTML5 icon"></i> <i class="fi fi-brands-css3-alt" id="about-icons" alt="CSS3 icon"></i> <i class="fi fi-brands-js" id="about-icons" alt="JavaScript icon"></i> <i class="fi fi-brands-node-js" id="about-icons" alt="Node.js icon"></i>
+                
+                <h6>Social Media</h6><br />
+                <a href="https://instagram.com/" target="_blank"><i class="fi fi-brands-instagram" id="social-icons" alt="Instagram icon"></i></a> <a href="https://x.com/" target="_blank"><i class="fi fi-brands-twitter-alt" id="social-icons" alt="X icon"></i></a> <a href="https://www.linkedin.com/in/giovanarib/" target="_blank"><i class="fi fi-brands-linkedin" id="social-icons" alt="LinkedIn icon"></i></a> <a href="https://github.com/giovanaribp" target="_blank"><i class="fi fi-brands-github" id="social-icons" alt="GitHub icon"></i></a>
+              </div>
+            </div>
+
+                <button id="btnCloseAbout" class="close-button">Close</button>            
+         </div>
+      </dialog>
+
+      <dialog id="contactPage">
+        <div class="white-box-contact">
+            <h2>Contact</h2>
+          <div class="contact-page">
+            <div class="formulario">
+            <form action="https://formsubmit.co/giovana.ribp@hotmail.com" method="POST">
+               <h5>Name</h5><input type="text" name="name" required />
+               <h5>Email</h5><input type="email" name="email" required />
+               <h5>Message</h5><textarea name="message" required></textarea>
+               <input type="hidden" name="_captcha" value="false">               
+               <span class="note">Email for business and work-related inquiries only.</span>
+               <button type="submit" class="button-forms">Submit</button>
+            </form>
+            </div>
+          </div>
+              <button id="btnCloseContact" class="close-button">Close</button> 
+        </div>
+      </dialog>
+
+   <div class="sections">
+      <section id="graphic-design" class="sect">
+        <h2 class="section-title">Graphic & Motion Design</h2>
+         <div class="galeria-design">
+              <a href="./Materiais/post-4.png" data-lightbox="PetShop" target="_blank"><img src="./Materiais/post-4.png" class="work" alt="Vaccine campain Instagram post"></a>
+              <a href="./Materiais/post-5.png" data-lightbox="PetShop" target="_blank"><img src="./Materiais/post-5.png" class="work" alt="Petshop bath time Instagram post"></a>
+              <a href="./Materiais/post-6.png" data-lightbox="PetShop" target="_blank"><img src="./Materiais/post-6.png" class="work" alt="Do you know how many times you have to feed your pet per day? Instagram post"></a>
+          </div>
+
+          <div class="galeria-motion">
+               <a href="./Materiais/GIF players.gif" data-lightbox="Video" target="_blank"><img src="./Materiais/GIF players.gif" class="work-motion" alt="Website gif"></a>
+              <video autoplay muted loop playsinline class="work-motion">
+                  <source src="./Materiais/GIF NPS.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop playsinline class="work-motion">
+                  <source src="./Materiais/GIF 4.mp4" type="video/mp4">
+              </video>
+          </div>
+
+          <div class="galeria-motion">
+              <video autoplay muted loop playsinline class="work-motion">
+                  <source src="./Materiais/GIF 1.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop playsinline class="work-motion">
+                  <source src="./Materiais/GIF 2.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop playsinline class="work-motion">
+                  <source src="./Materiais/GIF 3.mp4" type="video/mp4">
+              </video>
+          </div>
+
+          <div class="galeria-design">
+              <a href="./Materiais/post-1.PNG" data-lightbox="Anhanguera" target="_blank"><img src="./Materiais/post-1.PNG" class="work" alt="'Merry Christmas' Instagram post"></a>
+              <a href="./Materiais/post-2.PNG" data-lightbox="Anhanguera" target="_blank"><img src="./Materiais/post-2.PNG" class="work" alt="Cat meme"></a>
+              <a href="./Materiais/post-3.PNG" data-lightbox="Anhanguera" target="_blank"><img src="./Materiais/post-3.PNG" class="work" alt="'Proclamation of the Republic' informative Instagram post"></a>
+          </div>
+      </section>
+
+      <section id="webdev" class="sect">
+        <h2 class="section-title">Web Development</h2>
+          <div class="galeria-dev">
+          </div>
+      </section>
+
+      <section id="illustration" class="sect">
+        <h2 class="section-title">Illustration</h2>
+          <div class="galeria-motion">
+              <img src="./Materiais/work.jpg" class="work" alt="">
+              <img src="./Materiais/work.jpg" class="work" alt="">
+              <img src="./Materiais/work.jpg" class="work" alt="">
+          </div>
+      </section>
+      </div>
+
+        <footer>© 2026 Giovana Ribeiro. All rights reserved.</footer>
+    </div>
+
+<script src="script.js"></script>
+<script src="lightbox-plus-jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
