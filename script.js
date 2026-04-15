@@ -9,7 +9,7 @@ function openSection(id) {
 }
 /* -- --------- -- */
 
-/* -- Animations -- */
+/* -- Page Animation -- */
 const fadeOut = () => {
     const loaderWraper =
     document.querySelector('.wrapper');
